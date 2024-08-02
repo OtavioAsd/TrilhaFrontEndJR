@@ -243,7 +243,7 @@ section p {
 .aside-content div {
   border: 1px #e53939 solid;
   border-radius: 10px;
-  margin: 20px 20px 20px 0px;
+  margin: 20px 0 0 0;
   padding: 30px;
 }
 
@@ -266,7 +266,7 @@ section p {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 60px;
+  margin: 60px 0 60px 0;
 }
 
 .card-image {
@@ -337,7 +337,409 @@ section p {
   height: 34px;
 }
 
+@media (max-width: 375px) {
+  body {
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(45deg, #000000, #1d1c1c, #000000);
+    background-size: 500%;
+    background-repeat: no-repeat;
+    animation: color 3s ease-in-out infinite;
+  }
+  
+  .container {
+    padding: 2px;
+  }
+
+  .header {
+    min-width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .buttons-group {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .buttons {
+    padding: 5px;
+    margin: 0;
+    letter-spacing: 2px;
+    font-size: 18px;
+  }
+
+  .profile {
+    grid-template-areas: 'personal-photo'
+    'greeting';
+    align-items: center;
+    justify-content: center;
+  }
+
+  .personal-photo {
+    width: 200px;
+    height: 200px;
+    margin: 50px auto 0 auto;
+  }
+
+  h1 { 
+    font-size: 30px;
+  }
+
+  #greetings {
+    margin: 30px 0 0 0;
+  }
+
+  .grid-content {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: 
+      "main"
+      "aisde";
+  }
+
+  .main-content section {
+    max-width: 260px;
+    border-radius: none;
+    margin: 10px 5px 5px 0;
+  }
+
+  .main-content h2 {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    font-size: 22px;
+  }
+
+  section p {
+    font-size: 16px;
+    padding: 5px;
+  } 
+
+  .aside-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -60px;
+  }
+
+  .aside-content h2 {
+    font-size: 30px;
+    margin: 0 0 0 -150px;
+  }
+
+  .aside-content div {
+    margin-right: 0;
+  }
+  
+  .aside-content img {
+    height: 40px;
+  }
+
+  .bottom-section h2 {
+    font-size: 30px;
+  }
+
+  .card {
+    flex-direction: column;
+    margin: 50px 0 80px 0;
+  }
+  
+  .card-image {
+    width: 200px;
+    height: 40px;
+    margin: 10px 10px 0 10px;
+    border-radius: 5px;
+  }
+
+  .card-image:hover {
+    width: 200px;
+    height: 200px;
+  }
+
+  .footer p {
+    font-size: 12px;
+  }
+  
+}
+
+@media (max-width: 375px) {
+  body {
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(45deg, #000000, #1d1c1c, #000000);
+    background-size: 500%;
+    background-repeat: no-repeat;
+    animation: color 3s ease-in-out infinite;
+  }
+  
+  .container {
+    padding: 2px;
+  }
+
+  .header {
+    min-width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .buttons-group {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .buttons {
+    padding: 5px;
+    margin: 0;
+    letter-spacing: 2px;
+    font-size: 18px;
+  }
+
+  .profile {
+    grid-template-areas: 'personal-photo'
+    'greeting';
+    align-items: center;
+    justify-content: center;
+  }
+
+  .personal-photo {
+    width: 200px;
+    height: 200px;
+    margin: 50px auto 0 auto;
+  }
+
+  h1 { 
+    font-size: 30px;
+  }
+
+  #greetings {
+    margin: 30px 0 0 0;
+  }
+
+  .grid-content {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: 
+      "main"
+      "aisde";
+  }
+
+  .main-content section {
+    max-width: 260px;
+    border-radius: none;
+    margin: 10px 5px 5px 0;
+  }
+
+  .main-content h2 {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    font-size: 22px;
+  }
+
+  section p {
+    font-size: 16px;
+    padding: 5px;
+  } 
+
+  .aside-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -60px;
+  }
+
+  .aside-content h2 {
+    font-size: 30px;
+    margin: 0 0 0 -150px;
+  }
+
+  .aside-content div {
+    margin-right: 0;
+  }
+  
+  .aside-content img {
+    height: 40px;
+  }
+
+  .bottom-section h2 {
+    font-size: 30px;
+  }
+
+  .card {
+    flex-direction: column;
+    margin: 50px 0 80px 0;
+  }
+  
+  .card-image {
+    width: 200px;
+    height: 40px;
+    margin: 10px 10px 0 10px;
+    border-radius: 5px;
+  }
+
+  .card-image:hover {
+    width: 200px;
+    height: 200px;
+  }
+
+  .footer p {
+    font-size: 12px;
+  }
+  
+}
+
+@media (max-width: 320px) {
+  body {
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(45deg, #000000, #1d1c1c, #000000);
+    background-size: 500%;
+    background-repeat: no-repeat;
+    animation: color 3s ease-in-out infinite;
+  }
+  
+  .container {
+    padding: 2px;
+  }
+
+  .header {
+    min-width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .buttons-group {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .buttons {
+    padding: 5px;
+    margin: 0;
+    letter-spacing: 2px;
+    font-size: 15px;
+  }
+
+  .profile {
+    grid-template-areas: 'personal-photo'
+    'greeting';
+    align-items: center;
+    justify-content: center;
+  }
+
+  .personal-photo {
+    width: 200px;
+    height: 200px;
+    margin: 50px auto 0 auto;
+  }
+
+  h1 { 
+    font-size: 30px;
+  }
+
+  #greetings {
+    margin: 30px 0 0 0;
+  }
+
+  .grid-content {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: 
+      "main"
+      "aisde";
+  }
+
+  .main-content section {
+    max-width: 260px;
+    border-radius: none;
+    margin: 10px 5px 5px 0;
+  }
+
+  .main-content h2 {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    font-size: 22px;
+  }
+
+  section p {
+    font-size: 12px;
+    padding: 5px;
+  } 
+
+  .aside-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -60px;
+  }
+
+  .aside-content h2 {
+    font-size: 30px;
+    margin: 0 0 0 -150px;
+  }
+
+  .aside-content div {
+    margin-right: 0;
+  }
+  
+  .aside-content img {
+    height: 40px;
+  }
+
+  .bottom-section h2 {
+    font-size: 30px;
+  }
+
+  .card {
+    flex-direction: column;
+    margin: 50px 0 80px 0;
+  }
+  
+  .card-image {
+    width: 200px;
+    height: 40px;
+    margin: 10px 10px 0 10px;
+    border-radius: 5px;
+  }
+
+  .card-image:hover {
+    width: 200px;
+    height: 200px;
+  }
+
+  .footer p {
+    font-size: 12px;
+  }
+  
+}
+
 @media (max-width: 280px) {
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(45deg, #000000, #1d1c1c, #000000);
+  background-size: 500%;
+  background-repeat: no-repeat;
+  animation: color 3s ease-in-out infinite;
+}
 
   .container {
     padding: 2px;
@@ -395,12 +797,10 @@ section p {
       "aisde";
   }
 
-
-
   .main-content section {
     max-width: 260px;
     border-radius: none;
-    margin: 10px 5px 5px 0px;
+    margin: 10px 5px 5px 0;
   }
 
   .main-content h2 {
@@ -435,4 +835,28 @@ section p {
     height: 40px;
   }
 
+  .bottom-section h2 {
+    font-size: 30px;
+  }
+
+  .card {
+    flex-direction: column;
+    margin: 50px 0 80px 0;
+  }
+  
+  .card-image {
+    width: 200px;
+    height: 40px;
+    margin: 10px 10px 0 10px;
+    border-radius: 5px;
+  }
+
+  .card-image:hover {
+    width: 200px;
+    height: 200px;
+  }
+
+  .footer p {
+    font-size: 12px;
+  }
 }
