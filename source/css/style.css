@@ -337,6 +337,231 @@ section p {
   height: 34px;
 }
 
+@media (max-width: 768px) { 
+
+  .buttons {
+    margin-right: 10px;
+    padding: 5px 10px;
+    color: #e53939;
+    letter-spacing: 2px;
+    font-size: 15px;
+  }
+
+  .profile {
+    grid-template-areas: 'personal-photo greeting';
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .personal-photo {
+    width: 220px;
+    height: 220px;
+    border: 1px #e53939 solid;
+    margin-top: 50px;
+    border-radius: 20px;
+
+  }
+
+  #greetings {
+    grid-area: "greeting";
+    margin: 0 20px 0 0;
+  }
+
+  h1 { 
+    font-size: 30px;
+  }
+
+
+  .main-content section {
+    max-width: 260px;
+    border-radius: none;
+    margin: 10px 0 10px 0;
+  }
+
+  .main-content h2 {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    font-size: 30px;
+  }
+
+  section p {
+    font-size: 20px;
+    padding: 10px;
+  } 
+
+  .aside-content h2 {
+    font-size: 30px;
+    margin: 0 0 0 -150px;
+  }
+
+  .aside-content div {
+    margin-right: 0;
+  }
+  
+  .aside-content img {
+    height: 40px;
+  }
+
+  .bottom-section h2 {
+    font-size: 30px;
+  }
+
+  .card {
+    flex-direction: column;
+    margin: 10px 0 120px 0;
+  }
+  
+  .card-image {
+    width: 250px;
+    height: 40px;
+    margin: 10px 10px 0 10px;
+    border-radius: 5px;
+  }
+
+  .card-image:hover {
+    width: 250px;
+    height: 200px;
+  }
+
+
+}
+
+
+
+
+@media (max-width: 425px) {
+  body {
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(45deg, #000000, #1d1c1c, #000000);
+    background-size: 500%;
+    background-repeat: no-repeat;
+    animation: color 3s ease-in-out infinite;
+  }
+  
+  .container {
+    padding: 2px;
+  }
+
+  .header {
+    min-width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .buttons-group {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .buttons {
+    padding: 5px;
+    margin: 0;
+    letter-spacing: 2px;
+    font-size: 18px;
+  }
+
+  .profile {
+    grid-template-areas: 'personal-photo'
+    'greeting';
+    align-items: center;
+    justify-content: center;
+  }
+
+  .personal-photo {
+    width: 200px;
+    height: 200px;
+    margin: 50px auto 0 auto;
+  }
+
+  h1 { 
+    font-size: 30px;
+  }
+
+  #greetings {
+    margin: 30px 0 0 0;
+  }
+
+  .grid-content {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: 
+      "main"
+      "aisde";
+  }
+
+  .main-content section {
+    max-width: 260px;
+    border-radius: none;
+    margin: 10px 5px 5px 0;
+  }
+
+  .main-content h2 {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    font-size: 22px;
+  }
+
+  section p {
+    font-size: 16px;
+    padding: 5px;
+  } 
+
+  .aside-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -60px;
+    margin-bottom: 20px;
+  }
+
+  .aside-content h2 {
+    font-size: 30px;
+    margin: 0 0 0 -150px;
+  }
+
+  .aside-content div {
+    margin-right: 0;
+  }
+  
+  .aside-content img {
+    height: 40px;
+  }
+
+  .bottom-section h2 {
+    font-size: 30px;
+  }
+
+  .card {
+    flex-direction: column;
+    margin: 10px 0 120px 0;
+  }
+  
+  .card-image {
+    width: 250px;
+    height: 40px;
+    margin: 10px 10px 0 10px;
+    border-radius: 5px;
+  }
+
+  .card-image:hover {
+    width: 250px;
+    height: 200px;
+  }
+
+  .footer p {
+    font-size: 12px;
+  }
+  
+}
+
 @media (max-width: 375px) {
   body {
     min-height: 100vh;
@@ -426,7 +651,9 @@ section p {
     justify-content: center;
     align-items: center;
     margin-top: -60px;
+   
   }
+  margin-bottom: 20px;
 
   .aside-content h2 {
     font-size: 30px;
@@ -447,7 +674,7 @@ section p {
 
   .card {
     flex-direction: column;
-    margin: 50px 0 80px 0;
+    margin: 10px 0 120px 0;
   }
   
   .card-image {
@@ -557,7 +784,9 @@ section p {
     justify-content: center;
     align-items: center;
     margin-top: -60px;
+   
   }
+  margin-bottom: 20px;
 
   .aside-content h2 {
     font-size: 30px;
@@ -578,7 +807,7 @@ section p {
 
   .card {
     flex-direction: column;
-    margin: 50px 0 80px 0;
+    margin: 10px 0 120px 0;
   }
   
   .card-image {
@@ -688,7 +917,9 @@ section p {
     justify-content: center;
     align-items: center;
     margin-top: -60px;
+   
   }
+  margin-bottom: 20px;
 
   .aside-content h2 {
     font-size: 30px;
@@ -709,7 +940,7 @@ section p {
 
   .card {
     flex-direction: column;
-    margin: 50px 0 80px 0;
+    margin: 10px 0 120px 0;
   }
   
   .card-image {
@@ -820,7 +1051,9 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: -60px;
+   
   }
+  margin-bottom: 20px;
 
   .aside-content h2 {
     font-size: 30px;
@@ -841,7 +1074,7 @@ body {
 
   .card {
     flex-direction: column;
-    margin: 50px 0 80px 0;
+    margin: 10px 0 120px 0;
   }
   
   .card-image {
