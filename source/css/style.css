@@ -169,16 +169,9 @@ a {
   color: #ffffff;
 }
 
-strong {
+.bold {
   color: #e53939;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
-h2 {
-  padding: 10px 0px 0 150px;
-  font-size: 36px;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  color: #e53939;
 }
 
 /* layout de conteúdo em grid */
@@ -232,6 +225,13 @@ h2 {
   margin: 20px 20px 20px 0px;
 }
 
+.section-h2 {
+  padding: 10px 0px 0 150px;
+  font-size: 36px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #e53939;
+}
+
 /* Parágrafo do conteúdo principal  */
 section p {
   font-family: Arial, Helvetica, sans-serif;
@@ -249,8 +249,12 @@ section p {
   margin: 100px 0 100px 0;
 }
 
-.aside-content h2 {
+.aside-h2 {
   margin: 20px 0 20px -150px;
+  padding: 10px 0px 0 150px;
+  font-size: 36px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #e53939;
 }
 
 .aside-content div {
@@ -272,8 +276,12 @@ section p {
   justify-content: center;
 }
 
-.bottom-section h2 {
+.bottom-section-h2 {
   margin-left: -150px;
+  padding: 10px 0px 0 150px;
+  font-size: 36px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #e53939;
 }
 
 /* Cartas accordion da section inferior */
@@ -391,7 +399,7 @@ section p {
     font-size: 70px;
   }
 
-  h2 {
+  .section-h2 {
     font-size: 60px;
   }
 
@@ -490,7 +498,7 @@ section p {
     font-size: 70px;
   }
 
-  h2 {
+  .section-h2 {
     font-size: 60px;
   }
 
@@ -588,7 +596,7 @@ section p {
     padding: 10px;
   } 
 
-  .aside-content h2 {
+  .aside-h2 {
     font-size: 30px;
     margin: 0 0 0 -150px;
   }
@@ -601,7 +609,7 @@ section p {
     height: 40px;
   }
 
-  .bottom-section h2 {
+  .bottom-section-h2 {
     font-size: 30px;
   }
 
@@ -619,6 +627,7 @@ section p {
     width: 200px;
   }
 }
+
 @media (max-width: 1024px) { 
 
   .buttons {
@@ -655,7 +664,7 @@ section p {
     padding: 10px;
   } 
 
-  .aside-content h2 {
+  .aside-h2 {
     font-size: 30px;
     margin: 0 0 0 -150px;
   }
@@ -668,7 +677,7 @@ section p {
     height: 40px;
   }
 
-  .bottom-section h2 {
+  .bottom-section-h2 {
     font-size: 30px;
   }
 
@@ -724,7 +733,7 @@ section p {
     padding: 10px;
   } 
 
-  .aside-content h2 {
+  .aside-h2 {
     font-size: 30px;
     margin: 0 0 0 -150px;
   }
@@ -737,7 +746,7 @@ section p {
     height: 40px;
   }
 
-  .bottom-section h2 {
+  .bottom-section-h2 {
     font-size: 30px;
   }
 
@@ -838,7 +847,7 @@ section p {
     margin-bottom: 20px;
   }
 
-  .aside-content h2 {
+  .aside-h2 {
     font-size: 30px;
     margin: 0 0 0 -150px;
   }
@@ -851,7 +860,7 @@ section p {
     height: 40px;
   }
 
-  .bottom-section h2 {
+  .bottom-section-h2 {
     font-size: 30px;
   }
 
@@ -960,7 +969,7 @@ section p {
     margin-bottom: 20px;
   }
 
-  .aside-content h2 {
+  .aside-h2 {
     font-size: 30px;
     margin: 0 0 0 -150px;
   }
@@ -973,7 +982,7 @@ section p {
     height: 40px;
   }
 
-  .bottom-section h2 {
+  .bottom-section-h2 {
     font-size: 30px;
   }
 
@@ -1083,7 +1092,7 @@ section p {
   }
   
 
-  .aside-content h2 {
+  .aside-h2 {
     font-size: 30px;
     margin: 0 0 0 -150px;
   }
@@ -1096,7 +1105,7 @@ section p {
     height: 40px;
   }
 
-  .bottom-section h2 {
+  .bottom-section-h2 {
     font-size: 30px;
   }
 
@@ -1205,7 +1214,7 @@ section p {
   }
   
 
-  .aside-content h2 {
+  .aside-h2 {
     font-size: 30px;
     margin: 0 0 0 -150px;
   }
@@ -1218,7 +1227,7 @@ section p {
     height: 40px;
   }
 
-  .bottom-section h2 {
+  .bottom-section-h2 {
     font-size: 30px;
   }
 
@@ -1328,7 +1337,7 @@ section p {
   }
   
 
-  .aside-content h2 {
+  .aside-h2 {
     font-size: 30px;
     margin: 0 0 0 -150px;
   }
@@ -1341,7 +1350,7 @@ section p {
     height: 40px;
   }
 
-  .bottom-section h2 {
+  .bottom-section-h2 {
     font-size: 30px;
   }
 
@@ -1452,7 +1461,7 @@ section p {
   }
   
 
-  .aside-content h2 {
+  .aside-h2 {
     font-size: 30px;
     margin: 0 0 0 -150px;
   }
@@ -1465,7 +1474,7 @@ section p {
     height: 40px;
   }
 
-  .bottom-section h2 {
+  .bottom-section-h2 {
     font-size: 30px;
   }
 
